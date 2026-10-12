@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Automation &amp; Lifecycle Systems | Chitrangada Mishra</title>
+<meta name="description" content="Seven documented automation and lifecycle marketing case studies across Zapier, Trello, Make and Klaviyo — built and tested by Chitrangada Mishra, AI-Native Growth Marketer.">
+<meta name="author" content="Chitrangada Mishra">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Automation &amp; Lifecycle Systems | Chitrangada Mishra">
+<meta property="og:description" content="Seven documented automation and lifecycle marketing case studies across Zapier, Trello, Make and Klaviyo.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Crect x='10' y='26' width='12' height='12' fill='%23FFD400'/%3E%3Crect x='42' y='26' width='12' height='12' fill='%23fff'/%3E%3Cpath d='M22 32h20' stroke='%23FFD400' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,700..900&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --navy:#000000;
+  --ink:#0D0D0D;
+  --soft:#3D3D3D;
+  --line:#000000;
+  --sig:#FFD400;
+  --zapier:#E4410B;
+  --trello:#0B5CD5;
+  --make:#6A1FD1;
+  --klaviyo:#00875A;
+  --display:"Archivo","Arial Black","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sig);outline-offset:3px;box-shadow:0 0 0 6px #000}
+.wrap{width:min(var(--wrap),100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--sig);color:#000;padding:.6rem 1rem;z-index:100;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1;letter-spacing:-.02em;font-stretch:112%}
+
+.site-header{position:sticky;top:0;z-index:40;background:#000;color:#fff;border-bottom:4px solid var(--sig);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:1rem}
+.brand{font-family:var(--display);font-weight:800;font-stretch:112%;text-decoration:none;color:#fff;text-transform:none;letter-spacing:-.01em}
+.nav a.cta{font:700 .95rem var(--body);text-decoration:none;color:#000;background:var(--sig);padding:.55rem 1rem;border-radius:0}
+.nav a.cta:hover{background:#fff}
+
+.hero{background:#000;color:#fff;padding:clamp(3.5rem,8vw,6.5rem) 0 clamp(3rem,7vw,5.5rem)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero h1{font-weight:900;font-size:clamp(2.8rem,7vw,5.6rem);margin-bottom:1.4rem;line-height:.92}
+.hero h1::after{content:"";display:block;width:120px;height:10px;background:var(--sig);margin-top:1.2rem}
+.hero p{margin:0 0 1rem;color:#CFCFCF;max-width:52ch}
+.hero p.sub{color:#fff;font-size:1.25rem;font-weight:600;max-width:40ch}
+.facts{display:flex;flex-wrap:wrap;gap:0;list-style:none;padding:0;margin:1.8rem 0 0;border:2px solid #fff;width:fit-content}
+.facts li{color:#CFCFCF;padding:.8rem 1.3rem;font-size:.92rem}
+.facts li + li{border-left:2px solid #fff}
+.facts strong{display:block;font:900 2.1rem/1 var(--display);font-stretch:112%;color:var(--sig);margin-bottom:.25rem}
+
+.pipe{position:relative;background:#141414;border:2px solid #fff;padding:1.4rem}
+.pipe-title{font:700 .85rem var(--body);color:var(--sig);margin:0 0 1rem;letter-spacing:.02em}
+.node{display:flex;align-items:center;gap:.9rem;background:#fff;color:#000;padding:.85rem 1rem;position:relative;border-left:8px solid var(--c)}
+.node + .node{margin-top:24px}
+.node + .node::before{content:"";position:absolute;left:24px;top:-24px;height:24px;border-left:3px solid var(--sig)}
+.node b{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:1.05rem;display:block}
+.node span{font-size:.9rem;color:#3D3D3D}
+.node i{font-style:normal;margin-left:auto;font-size:.78rem;font-weight:700;color:var(--c);white-space:nowrap}
+.dot{width:12px;height:12px;background:var(--c);flex-shrink:0}
+@media (prefers-reduced-motion:no-preference){
+  .node{animation:in .45s cubic-bezier(.2,.8,.2,1) backwards}
+  .node:nth-child(3){animation-delay:.12s}.node:nth-child(4){animation-delay:.24s}.node:nth-child(5){animation-delay:.36s}
+}
+@keyframes in{from{opacity:0;transform:translateX(18px)}}
+
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.head{max-width:720px;margin-bottom:2.2rem}
+.head h2{font-weight:900;font-size:clamp(2.1rem,4.4vw,3.3rem);margin-bottom:.8rem}
+.head p{margin:0;color:var(--soft);font-size:1.1rem}
+
+.filter{display:flex;flex-wrap:wrap;gap:0;margin-bottom:2.2rem;border:2px solid #000;width:fit-content;max-width:100%}
+.filter button{font:700 .95rem var(--body);background:#fff;color:#000;border:0;border-right:2px solid #000;padding:.7rem 1.1rem;min-height:46px;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;border-radius:0}
+.filter button:last-child{border-right:0}
+.filter button .dot{width:10px;height:10px}
+.filter button:hover{background:#F2F2F2}
+.filter button[aria-pressed="true"]{background:#000;color:var(--sig)}
+
+.group{margin-bottom:3rem}
+.group[hidden]{display:none}
+.group-head{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin-bottom:1.2rem}
+.group-head h3{font-weight:900;font-size:1.9rem;color:#fff;background:var(--c);padding:.35rem .8rem .45rem}
+.group-head p{margin:0;color:var(--soft);font-weight:600;font-size:.97rem}
+.group-head a{margin-left:auto;font-weight:700;font-size:.95rem;color:#000;text-decoration:none;border-bottom:3px solid var(--c)}
+.group-head a:hover{background:var(--sig)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px}
+.card{background:#fff;border:2px solid #000;padding:1.4rem 1.4rem 1.3rem;display:flex;flex-direction:column;box-shadow:6px 6px 0 var(--c);transition:transform .12s ease, box-shadow .12s ease}
+.card:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--c)}
+.card h4{font:800 1.25rem/1.15 var(--display);font-stretch:108%;margin:0 0 .55rem;color:#000}
+.card p{margin:0 0 .9rem;color:var(--soft);font-size:.98rem}
+.flow{font-size:.88rem;font-weight:600;color:#000;background:#F4F4F4;border-left:4px solid var(--c);padding:.55rem .75rem;margin:0 0 .9rem}
+.stack{display:flex;flex-wrap:wrap;gap:.35rem;list-style:none;margin:0 0 1.1rem;padding:0}
+.stack li{font-size:.78rem;font-weight:700;padding:.2rem .55rem;border:1.5px solid #000;color:#000}
+.card .open{margin-top:auto;align-self:flex-start;font-weight:700;text-decoration:none;color:#fff;background:#000;padding:.65rem 1.1rem;min-height:44px;display:inline-flex;align-items:center;border:2px solid #000}
+.card .open:hover{background:var(--sig);color:#000}
+.card.feature{grid-column:1/-1}
+.card.feature .two{display:grid;grid-template-columns:1.2fr .8fr;gap:1.8rem}
+.card.feature ul.proof{margin:0 0 1rem;padding:1rem 1.2rem 1rem 2.2rem;background:#000;color:#fff;font-size:.97rem;font-weight:500}
+.card.feature ul.proof li::marker{color:var(--sig)}
+.card.feature ul.proof li + li{margin-top:.35rem}
+
+.approach{background:var(--sig);border-block:3px solid #000}
+.approach .head p{color:#000}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;list-style:none;margin:0;padding:0;counter-reset:r}
+.rules li{background:#fff;border:2px solid #000;padding:1.3rem;counter-increment:r}
+.rules li::before{content:counter(r);display:block;font:900 2.4rem/1 var(--display);margin-bottom:.6rem}
+.rules h3{font-weight:800;font-size:1.2rem;margin-bottom:.45rem;color:#000;line-height:1.15}
+.rules p{margin:0;color:var(--soft);font-size:.98rem}
+
+.related{display:flex;flex-wrap:wrap;gap:.7rem}
+.related a{text-decoration:none;font-weight:700;border:2px solid #000;color:#000;padding:.7rem 1.1rem}
+.related a:hover{background:#000;color:var(--sig)}
+
+footer{background:#000;color:#CFCFCF;padding:2.4rem 0 calc(2.4rem + env(safe-area-inset-bottom,0px));border-top:6px solid var(--sig)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center}
+.foot strong{color:#fff;font-family:var(--display);font-stretch:112%;font-weight:800;display:block;font-size:1.2rem}
+.foot a{color:#fff;text-decoration-color:var(--sig);text-decoration-thickness:2px;text-underline-offset:3px}
+
+@media (max-width:900px){
+  .hero-grid,.card.feature .two{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .group-head a{margin-left:0;width:fit-content}
+  .nav a.cta{display:none}
+  .facts li{padding:.7rem .9rem}
+  .filter{width:100%}
+  .filter button{flex:1 1 auto;border-bottom:2px solid #000}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">Chitrangada Mishra</a>
+    <a class="cta" href="#projects">View case studies</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Automation &amp; Lifecycle Systems</h1>
+        <p class="sub">Workflows that turn manual marketing and operations work into systems that run on their own.</p>
+        <p>Documented portfolio case studies built in real Zapier, Trello, Make and Klaviyo accounts. Each one covers the trigger, the logic, the output and what changed during testing. Where something is designed rather than live, the case study says so.</p>
+        <ul class="facts" id="facts" aria-label="Portfolio at a glance"></ul>
+      </div>
+      <div class="pipe" aria-hidden="true">
+        <p class="pipe-title">The shape every project follows</p>
+        <div class="node" style="--c:var(--zapier)"><span class="dot"></span><div><b>Trigger</b><span>A form fill, a signed record, a new lead, a signup</span></div><i>Zapier · Klaviyo</i></div>
+        <div class="node" style="--c:var(--make)"><span class="dot"></span><div><b>AI step</b><span>Summarise, classify, qualify, personalise</span></div><i>AI by Zapier · Make AI</i></div>
+        <div class="node" style="--c:var(--trello)"><span class="dot"></span><div><b>Route &amp; organise</b><span>Conditional paths, pipeline stages, segments</span></div><i>Trello · Klaviyo</i></div>
+        <div class="node" style="--c:var(--klaviyo)"><span class="dot"></span><div><b>Output</b><span>Emails, notifications, documents, journeys</span></div><i>Gmail · Docs · Email</i></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="projects" aria-labelledby="proj-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="proj-h">Case studies by platform</h2>
+        <p>Pick a platform or browse everything. Every button opens the full case study in a new tab.</p>
+      </div>
+      <div class="filter" role="group" aria-label="Filter by platform" id="filter"></div>
+      <p class="sr-only" aria-live="polite" id="status"></p>
+      <div id="groups"></div>
+      <noscript>
+        <ul>
+          <li><a href="https://zapierautomationprojects.netlify.app/">Zapier case studies</a></li>
+          <li><a href="https://aicontenttrello.netlify.app/">Trello: AI Content Production Workflow</a></li>
+          <li><a href="https://crmleadtrello.netlify.app/">Trello: CRM Lead Pipeline Management</a></li>
+          <li><a href="https://makeprojectsample.netlify.app/">Make: Meeting Notes Intelligence</a></li>
+          <li><a href="https://klavyiosampleproject.netlify.app/">Klaviyo: AAVYA Lifecycle Marketing System</a></li>
+        </ul>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="approach" aria-labelledby="app-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="app-h">How these were built</h2>
+        <p>The same three rules run through every project on this page.</p>
+      </div>
+      <ul class="rules">
+        <li><h3>Start from a real workflow</h3><p>Each build begins with a task people actually do by hand — onboarding a client, qualifying a lead, writing up a meeting, following up with a customer.</p></li>
+        <li><h3>Keep the reliable core</h3><p>When an integration causes friction, the build is simplified to the part that works and the rest is added later, as in the Make project.</p></li>
+        <li><h3>Say what's live and what isn't</h3><p>Demo data is labelled as demo data, drafts as drafts, and no performance results are claimed where no live traffic exists.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="rel-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="rel-h">More of my work</h2>
+        <p>Other portfolios showing how I use AI to build and experiment.</p>
+      </div>
+      <div class="related">
+        <a href="https://aisolutiontoolmarketer.netlify.app/" target="_blank" rel="noopener noreferrer">23 AI marketing tools ↗</a>
+        <a href="https://aiassistedgames.netlify.app/" target="_blank" rel="noopener noreferrer">AI-assisted game experiments ↗</a>
+        <a href="https://miniatureadsportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">AI advertising experiments ↗</a>
+        <a href="mailto:chitra.work96@gmail.com">Email me</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Chitrangada Mishra</strong>AI-Native Growth Marketer</div>
+    <div><a href="https://linkedin.com/in/chitrangada-mishra-23782384" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:chitra.work96@gmail.com">chitra.work96@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   HOW TO ADD A NEW TOOL OR PROJECT
+   1. New platform (e.g. n8n): add an object to PLATFORMS.
+   2. New project: add an object to PROJECTS with the
+      matching platform id. Everything else updates itself.
+   ========================================================= */
+const PLATFORMS = [
+  { id:'zapier',  name:'Zapier',  color:'var(--zapier)',  blurb:'No-code automation with AI steps',        hub:'https://zapierautomationprojects.netlify.app/' },
+  { id:'trello',  name:'Trello',  color:'var(--trello)',  blurb:'Workflow and pipeline systems',           hub:'https://trelloautomationprojects.netlify.app/' },
+  { id:'make',    name:'Make',    color:'var(--make)',    blurb:'Multi-step AI scenario orchestration',     hub:'' },
+  { id:'klaviyo', name:'Klaviyo', color:'var(--klaviyo)', blurb:'Lifecycle and CRM email automation',       hub:'' }
+];
+
+const PROJECTS = [
+  { platform:'zapier', title:'AI Client Onboarding Automation',
+    desc:'Automates client onboarding from a signed record to an AI-generated onboarding brief and a client email.',
+    flow:'Signed record → AI onboarding brief → client email',
+    stack:['Zapier','AI by Zapier','Gmail'], url:'https://zapierautomationprojects.netlify.app/' },
+  { platform:'zapier', title:'AI Lead Qualification & Routing',
+    desc:'AI evaluates each incoming lead, classifies its priority, routes it through conditional paths and triggers the matching notification.',
+    flow:'New lead → AI priority score → conditional paths → notification',
+    stack:['Zapier','AI by Zapier','Gmail'], url:'https://zapierautomationprojects.netlify.app/' },
+  { platform:'zapier', title:'Lead Capture & Automated Email Response',
+    desc:'A form submission automatically becomes a lead acknowledgement email plus an internal notification.',
+    flow:'Form submission → acknowledgement email + internal alert',
+    stack:['Zapier','Gmail'], url:'https://zapierautomationprojects.netlify.app/' },
+  { platform:'trello', title:'AI Content Production Workflow',
+    desc:'A nine-stage board that runs AI-assisted content production end to end, with a label taxonomy, per-card checklists and Butler rules that post SEO tasks and publish notices automatically.',
+    flow:'Ideas → research → prompt → AI draft → human edit → SEO → final review → published → performance',
+    stack:['Trello','Butler automation','Calendar Power-Up','ChatGPT','Claude'], url:'https://aicontenttrello.netlify.app/' },
+  { platform:'trello', title:'CRM Lead Pipeline Management',
+    desc:'A nine-stage CRM pipeline where every lead is one card carrying its source, industry, priority, due date and checklist. Won and lost deals stay on the board as a permanent record.',
+    flow:'New lead → contacted → discovery call → proposal → negotiation → won / lost / follow-up',
+    stack:['Trello','Labels','Due dates','Checklists'], url:'https://crmleadtrello.netlify.app/' },
+  { platform:'make', title:'Meeting Notes Intelligence',
+    desc:'Takes structured meeting inputs, summarises the discussion, extracts decisions and writes a readable Google Docs record automatically. Simplified from a broader first version to the reliable core, then tested successfully.',
+    flow:'Scenario inputs → AI summary → AI decision extraction → Google Doc',
+    stack:['Make','Make AI Toolkit','Google Docs','Google Drive'], url:'https://makeprojectsample.netlify.app/' },
+  { platform:'klaviyo', feature:true, title:'AAVYA — DTC Lifecycle Marketing System',
+    desc:'An end-to-end Klaviyo build for AAVYA, a fictional botanical skincare brand, created after completing the Klaviyo Practitioner certification. Every screen in the case study is from the real Klaviyo account it was built in.',
+    flow:'Signup form → subscriber list → segments → lifecycle flows → personalised email',
+    proof:['50 demo profiles with 12 customer properties','22 audience segments across lifecycle stage and product interest','10 lifecycle flows mapped: 4 built with full canvases, 6 designed','Conditional splits, personalisation with fallbacks, and an A/B subject-line test','3 targeted campaigns and a 15-point QA checklist — all kept in Draft by design'],
+    stack:['Klaviyo','Segmentation','Flows','A/B testing'], url:'https://klavyiosampleproject.netlify.app/' }
+];
+
+(function(){
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const groups = document.getElementById('groups');
+  const filter = document.getElementById('filter');
+  const status = document.getElementById('status');
+
+  document.getElementById('facts').innerHTML =
+    `<li><strong>${PROJECTS.length}</strong>case studies</li><li><strong>${PLATFORMS.length}</strong>platforms</li><li><strong>2025–26</strong>built</li>`;
+
+  const card = p => {
+    const ext = 'target="_blank" rel="noopener noreferrer"';
+    const stack = `<ul class="stack">${p.stack.map(s=>`<li>${esc(s)}</li>`).join('')}</ul>`;
+    const btn = `<a class="open" href="${esc(p.url)}" ${ext}>Open case study ↗<span class="sr-only"> ${esc(p.title)} (opens in a new tab)</span></a>`;
+    if (p.feature) {
+      return `<article class="card feature"><div class="two"><div><h4>${esc(p.title)}</h4><p>${esc(p.desc)}</p><p class="flow">${esc(p.flow)}</p>${stack}${btn}</div>
+        <ul class="proof">${p.proof.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></article>`;
+    }
+    return `<article class="card"><h4>${esc(p.title)}</h4><p>${esc(p.desc)}</p><p class="flow">${esc(p.flow)}</p>${stack}${btn}</article>`;
+  };
+
+  groups.innerHTML = PLATFORMS.map(pl => {
+    const items = PROJECTS.filter(p => p.platform === pl.id);
+    if (!items.length) return '';
+    const hub = pl.hub ? `<a href="${esc(pl.hub)}" target="_blank" rel="noopener noreferrer">All ${esc(pl.name)} work ↗</a>` : '';
+    return `<div class="group" data-platform="${pl.id}" style="--c:${pl.color}">
+      <div class="group-head"><h3>${esc(pl.name)}</h3><p>${esc(pl.blurb)} · ${items.length} case stud${items.length>1?'ies':'y'}</p>${hub}</div>
+      <div class="cards">${items.map(card).join('')}</div></div>`;
+  }).join('');
+
+  const btns = [{id:'all',name:'All platforms'}].concat(PLATFORMS.filter(pl=>PROJECTS.some(p=>p.platform===pl.id)));
+  filter.innerHTML = btns.map((b,i)=>`<button type="button" data-f="${b.id}" aria-pressed="${i===0}">${b.color?`<span class="dot" style="--c:${b.color}"></span>`:''}${esc(b.name)}</button>`).join('');
+  filter.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const f = b.dataset.f;
+    filter.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x===b));
+    groups.querySelectorAll('.group').forEach(g => g.hidden = !(f==='all' || g.dataset.platform===f));
+    status.textContent = f==='all' ? 'Showing all platforms.' : 'Showing ' + b.textContent + ' case studies.';
+  });
+})();
+</script>
+</body>
+</html>
